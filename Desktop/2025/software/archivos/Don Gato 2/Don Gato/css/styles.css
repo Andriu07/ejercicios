@@ -1,0 +1,303 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+nav {
+    background-color: #8EACCD;
+    border-right: 5px dashed #FFFFFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+nav ul {
+    position: sticky;
+    top: 0;
+    list-style: none;
+}
+
+nav li {
+    padding: 2px;
+    margin: 5px;
+}
+
+nav a {
+    display: inline-block;
+}
+
+nav a:hover{
+    background-color: #8ECDAF;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+nav img {
+    width: 50px;
+    margin: 5px;
+}
+
+header {
+    background-image: url("../imgs/banner.png");
+    background-size: cover;
+    background-position: center;
+    
+    height: 170px;
+    margin-left: 74px;
+
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+
+    flex-direction: column;
+
+    border-bottom: 5px dashed #FFFFFF;
+}
+
+
+header h1 {
+    font-family: "Irish Grover";
+    font-size: 50px;
+    text-align: center;
+    
+    background-color: #8ECDAFee;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    text-shadow: 1px 1px 1px #000000;
+    
+    padding: 20px 20px;
+    border-radius: 30px;
+}
+
+main {
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+
+    margin-left: 74px;
+}
+
+#biography {
+    max-width: 360px;
+
+    background-color: #8ECDAF;
+    border-right: 5px dashed #FFFFFF;
+    
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cat-photo {
+    width: 70%;
+    object-fit: cover;
+    border: 5px dashed #FFFFFF;
+    box-shadow: 2px 2px 10px #000000;
+}
+
+#biography * {
+    margin: 10px;
+}
+
+#biography p {
+    max-width: 70%;
+    text-align: center;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.subtitle {
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    
+    background-color: #FFFFFF;
+    
+    font-family: "Irish Grover";
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.subtitle img {
+    max-width: 50px;
+}
+
+.main-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 10px;
+    min-height: 80vh;
+    background-color: #8EACCD;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.main-section h1 {
+    font-size: 80px;
+    text-align: center;
+}
+
+.main-section * {
+    margin: 10px;
+}
+
+.main-section .subtitle {
+    border-radius: 15px;
+    color: #8EACCD;
+    text-shadow: 0px 0px 0px #000000;
+}
+
+.main-section .subtitle img {
+    width: 50px;
+}
+
+.main-section #place {
+    display:  flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 5px dashed #FFFFFF;
+    padding: 10px
+}
+
+.main-section #place img {
+    width: 50%;
+}
+
+.main-section .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.main-section #services-products {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.grid {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    background-color: #ABC5E1;
+}
+
+.grid .text{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    
+    max-width: 30%;
+    min-width: 300px;
+    margin: 40px 20px;
+    box-shadow: 5px 5px 30px #333333; 
+}
+
+.grid .text p {
+    margin: 40px 10px;
+}
+
+.grid .text ul {
+    list-style: none;
+}
+
+form {
+    width: 30%;
+}
+
+form .subtitle {
+    max-width: 200px;
+}
+
+form p {
+    font-size: 20px;
+}
+
+form input {
+    height: 25px;
+    width: 100%;
+    padding: 10px;
+
+    border-radius: 20px;
+    border: 3px double #8EACCD;
+    color: #8EACCD;
+
+    outline: none;
+}
+
+
+
+@media (width <= 1130px) {
+    .main-section #place {
+        flex-direction: column;
+        width: 100%;
+
+    }
+}
+
+@media (width <=830px) {
+    #index {
+        flex-direction: column;
+    }
+
+    #biography {
+        max-width: none;
+        border-right: none;
+        border-bottom: 5px dashed #FFFFFF;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    #biography .cat-photo {
+        width: 50%;
+    }
+
+
+}
+
+@media (width <= 540px) {
+    header {
+        height: auto;
+    }
+    
+    nav {
+        position: static;
+        height: auto;
+        border-right: none;
+
+        border-top:  5px dashed #FFFFFF;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    header h1 {
+        margin: 10px 0px
+    }
+
+    header, main {
+        margin-left: 0px;
+    }
+}

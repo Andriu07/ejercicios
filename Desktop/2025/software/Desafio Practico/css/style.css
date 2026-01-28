@@ -1,0 +1,53 @@
+body{
+    background-color: rgb(246, 243, 243);
+}
+
+
+img {
+    height: 500px;
+    object-fit: cover;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    color: azure;
+}
+
+footer{
+    background-color: rgb(7, 8, 9);
+    padding-block: 20px;
+}
+
+.carousel-caption {
+    background-color: rgba(44, 43, 43, 0.5);
+  }
+
+  .container1{
+    background-color: rgba(234, 226, 226, 0.821);
+    padding: 20px;
+    margin-block: 20px;
+  }
+
+nav-item{
+    color: white;
+}
+
+h1{
+    color: rgb(1, 1, 1);
+    display: flex;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+
+h3{
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+ 

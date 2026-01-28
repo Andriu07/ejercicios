@@ -1,0 +1,65 @@
+.body{
+  padding: 0px;
+  margin: 0px;
+}
+
+.logo{
+    width: 100px;
+}
+
+header{
+    text-align: center;
+}
+
+nav li{
+display: inline;
+padding: 60px;
+font-size: 25px;
+}
+
+nav a{
+text-decoration: none;
+color: #000000;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+main{
+    background-color: #ffffff;
+    color: #000;
+}
+
+.courses{
+    padding: 10px ;
+}
+
+p{
+    font-size: 20px;
+    line-height: 1.2;
+}
+ .infoCurso{
+    overflow: auto;
+    margin-bottom: 30PX;
+    background-color: beige;
+    color: #000000;
+    border: 1px solid black;
+ }
+
+ .infoCurso img{
+   width: 225px;
+   float: left;
+   margin-right: 30px;
+ }
+
+ footer{
+    text-align: center;
+    padding: 20px;
+    background-color: lightgray;
+ }
+
+ .image{
+    width: 200px;
+    border: 2px solid black;
+ }
