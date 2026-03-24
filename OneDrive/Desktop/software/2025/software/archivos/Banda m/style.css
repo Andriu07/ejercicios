@@ -1,0 +1,73 @@
+body{
+  background-color: white;
+  color: black;
+}
+
+.logo{
+    width: 100px;
+}
+
+.wait{
+    padding: 30px;
+}
+
+p{
+ font-size:  18px;
+ line-height: 1.4;
+
+}
+
+
+.welcome img{
+    width: 225px;
+    float: left;
+    margin-right: 30px;
+}
+
+.wait img{
+ width: 225px;
+ float: left;
+ margin-right: 30px;
+}
+
+.end img{
+    width: 225px;
+    float: left;
+    margin-right: 30px;
+}
+
+.welcome{
+  overflow: auto;
+  margin-bottom: 30px;
+  text-decoration: double;
+}
+
+.wait{
+ overflow: auto;
+ margin-bottom: 30px;
+ text-decoration: double;
+}
+
+.enter{
+overflow: auto;
+margin-bottom: 30px;
+text-decoration: double;
+}
+
+.end2{
+  float: left;
+margin-bottom: 30px;
+
+}
+
+.end2 img{
+ width: 200px;
+ float: inline-start;
+ margin-bottom: 30px;
+}
+
+.water img{
+    width: 300px;
+    float: left;
+    margin: 10px;
+}

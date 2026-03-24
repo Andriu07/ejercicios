@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Asignación de Mantenimiento</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    select {
+      width: 200px;
+      margin-bottom: 10px;
+    }
+    .tarjetas-container {
+      display: flex;
+      overflow-x: auto;
+      gap: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      margin-top: 10px;
+    }
+    .tarjeta {
+      min-width: 200px;
+      border: 1px solid #aaa;
+      padding: 10px;
+      background: #f9f9f9;
+      border-radius: 5px;
+      cursor: pointer;
+      position: relative;
+    }
+    .tarjeta button {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      background: red;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      width: 25px;
+      height: 25px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Asignar Mantenimiento</h2>
+
+  <label for="tipoMantenimiento">Tipo de Mantenimiento:</label>
+  <select id="tipoMantenimiento"></select>
+
+  <label for="ubicacion">Ubicación:</label>
+  <select id="ubicacion"></select>
+
+  <h3>Empleados disponibles</h3>
+  <div class="tarjetas-container" id="tarjetasEmpleados"></div>
+
+  <div id="tarjetaSeleccionada"></div>
+
+  <button onclick="asignarInspeccion()">Asignar Inspección</button>
+
+  <h3>Asignaciones realizadas</h3>
+  <table id="tablaAsignaciones">
+    <thead>
+      <tr>
+        <th>Código</th>
+        <th>Tipo</th>
+        <th>Fecha de Inicio</th>
+        <th>Empleado</th>
+        <th>Ubicación</th>
+        <th>Opciones</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>

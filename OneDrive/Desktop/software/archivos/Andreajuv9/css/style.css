@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 100px;
+}
+
+header{
+    text-align: center;
+}
+
+nav li{
+    display: inline;
+    padding: 60px;
+    font-size: 25px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+main{
+    background-color: #ffffff;
+    color:#000;
+}
+
+.welcome {
+    padding:20px;
+    background-color:darkblue;
+    text-align:center;
+    color: white;
+}
+
+.courses{
+    padding: 30px;
+    background-color: #ffffff;
+    text-align: center;
+    color: #000;
+}
+
+p{
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.welcome h1{
+    color: white;
+}
+
+.courses h2{
+ color: #005A9C;
+}
+.infoCurso img{
+    width: 225px;
+    float: left;
+    margin-right: 30px;
+}
+
+.infoCurso{
+    overflow: auto;
+    margin-bottom: 30px;
+}
+
+footer{
+     text-align: center;
+     padding: 20px;
+     background-color: lightgray;
+}
+
+.image{
+    width: 600px;
+    border: 2px solid black;
+}

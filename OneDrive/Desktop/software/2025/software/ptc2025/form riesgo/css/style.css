@@ -1,0 +1,99 @@
+/* ====== FORMULARIO ====== */
+#formRiesgo {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+#formRiesgo .form-label {
+  font-weight: 600;
+  color: #212529;
+}
+
+#formRiesgo .form-control,
+#formRiesgo .form-select {
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  transition: border-color 0.3s ease;
+}
+
+#formRiesgo .form-control:focus,
+#formRiesgo .form-select:focus {
+  border-color: #68c89b;
+  box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
+}
+
+#formRiesgo .btn-success {
+  font-weight: 600;
+  background-color: aquamarine;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+
+/* ====== EVIDENCIAS ====== */
+#formRiesgo #evidencia {
+  max-width: 300px;
+}
+
+#formRiesgo #preview img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+#formRiesgo .form-text.text-danger {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* ====== TABLA DE REPORTES ====== */
+#tablaReportes th,
+#tablaReportes td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+#tablaReportes .btn {
+  padding: 4px 8px;
+  font-size: 0.9rem;
+}
+
+/* ====== TARJETAS DE TIPO DE RIESGO ====== */
+.tipo-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #dee2e6;
+  cursor: pointer;
+}
+
+.tipo-card img {
+  height: 150px;
+  object-fit: cover;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.tipo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-color: #198754;
+}
+
+.tipo-card .card-title {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.tipo-card.seleccionada {
+  border: 2px solid #198754;
+  box-shadow: 0 0 10px rgba(25, 135, 84, 0.3);
+}
+
+/* ====== MODAL DETALLE ====== */
+#modalVer .modal-body p {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
